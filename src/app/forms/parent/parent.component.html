@@ -1,0 +1,12 @@
+
+
+<div class="parent">
+    <h2>Parent Component</h2>
+    <div *ngFor="let name of name">
+        {{name}}
+      </div>
+   
+    <input type="text" (input)="updateData($event)" [value]="parentData" />
+    <app-child [childData]="parentData"  (childEvent)="resiveData($event)"></app-child>
+  </div>
+  

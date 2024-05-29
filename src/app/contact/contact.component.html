@@ -1,0 +1,71 @@
+<section class="contact" id="contact">
+    <div class="max-width">
+        <h2 class="title">Contact me</h2>
+        <div class="contact-content">
+            <div class="column left">
+                <div class="text">Get in Touch</div>
+                <p>Ready to embark on a coding journey or discuss the intricacies of software architecture? I'm here
+                    to collaborate and innovate. Drop me a line, and let's transform your ideas into elegant,
+                    efficient code. Whether it's a project proposal, coding challenge, or just a tech chat – I'm all
+                    ears!</p>
+                <div class="icons">
+                    <div class="row">
+                        <i class="fas fa-user"></i>
+                        <div class="info">
+                            <div class="head">Name</div>
+                            <div class="sub-title">Tarun Pareta</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="info">
+                            <div class="head">Address</div>
+                            <div class="sub-title">Jhalawar,Rajasthan,India</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info">
+                            <div class="head">Email</div>
+                            <div class="sub-title">tarun2001paretagmail.com</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column right">
+                <div class="text">Message me</div>
+                <form id="contact-form" >
+                    <div class="fields">
+                        <div class="field name">
+                            <input type="text" placeholder="Name" name="name" [(ngModel)]="messageMe.name" >
+                        </div>
+                        <div class="field email">
+                            <input type="email" placeholder="Email" name="email" [(ngModel)]="messageMe.email">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <input type="text" placeholder="Subject" name="Subject" [(ngModel)]="messageMe.subject">
+                    </div>
+                    <div class="field textarea">
+                        <textarea cols="30" rows="10" placeholder="Message.."  name="message" [(ngModel)]="messageMe.message" ></textarea>
+                    </div>
+                    <div class="button-area">
+                        <!-- <button type="submit">Send message</button> -->
+                    </div>
+                    <p>{{messageMe.name}}</p>
+                    <p>{{messageMe.email}}</p>
+                    <p>{{messageMe.subject}}</p>
+                    <p>{{messageMe.message}}</p>
+
+                </form>
+            </div>
+        </div>
+       
+                   
+          
+          
+        
+     
+
+    </div>
+</section>

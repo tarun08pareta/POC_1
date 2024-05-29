@@ -1,0 +1,15 @@
+
+
+    <div class="max-width">
+        <h2 class="title">My Projects</h2>
+        <div class="projects-content" >
+           
+            <div class="card" *ngFor="let project of myProject">
+                <img src="{{project.image}}" alt="Delicious Food">
+                <div class="card-content">
+                    <h2>{{project.projectName}}</h2>
+                    <p>{{project.projectDescription}}</p>
+                </div>
+            <!-- Add more project cards as needed -->
+        </div>
+    </div>
